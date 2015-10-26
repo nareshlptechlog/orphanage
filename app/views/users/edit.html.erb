@@ -1,0 +1,10 @@
+<h1>Edit Admin</h1>
+<%= form_for :user, url: user_path do |f| %>
+
+  Name: <%= f.text_field :name, :required => true %><br/>
+  Password: <%= f.password_field :password, :required => true %><br/>
+  Password Confirmation: <%= f.password_field :password_confirmation, :required => true %><br/>
+  Current Password: <%= f.password_field :current_password, :required => true %> <br/>
+  <%= f.submit "Submit" %>
+
+<% end %>
