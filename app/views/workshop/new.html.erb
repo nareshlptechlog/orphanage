@@ -1,0 +1,9 @@
+
+<%= form_tag '/workshop' do %> 
+<% binding.pry %>
+Date of Issue: <%= text_field_tag :date_of_issue %>
+No.of Item: <%= text_field_tag :no_of_items %>
+Actual cost <%= text_field_tag :actual_cost %>
+Total Assistance Amount :<%text_field_tag :total_assistance_amount %>
+<!-- Category: <%text_field_tag :category %> -->
+<%= submit_tag "Submit", class: 'btn btn-primary' %>

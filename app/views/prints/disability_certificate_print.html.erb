@@ -1,0 +1,11 @@
+<h1>DISABILITY CERTIFICATE </h1>
+
+<%= form_tag print_preview_disability_certificate_print_path, :method => 'get' do %>
+Name : <%= text_field_tag :name %></br>
+
+S/o,D/o,W/ <%= text_field_tag :father_or_husband_name %></br>
+
+<%= submit_tag "Search", :name => nil %>
+
+<% end %>
+<%= link_to "Back", root_path %>

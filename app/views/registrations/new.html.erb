@@ -1,0 +1,226 @@
+<h3>New Registration</h3><br>
+<%= form_tag registrations_path do%>
+	<div>
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Camp_At %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :camp_at, nil, class: "form-control", placeholder: "Camp At", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Camp_On_Date %></div>
+			<div class="col-md-5">
+				<%= date_field :camp_on_date, nil, id: "camp_date", class: "datepicker form-control", placeholder: "Camp On Date", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Registration_No %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :registration_no, nil, class: "form-control", placeholder: "Registration No", required: true %>
+			</div>
+		</div><br>
+
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Registration_Date %></div>
+			<div class="col-md-5">
+				<%= date_field :registration_date, nil, id: "reg_date", class: "datepicker form-control", placeholder: "Registration Date", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Name %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Name", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Date_Of_Birth %></div>
+			<div class="col-md-5">
+				<%= date_field :date_of_birth, nil, id: "dob", class: "datepicker form-control", placeholder: "Date Of Birth", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Age %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :age, nil, class: "form-control", placeholder: "age", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Sex %></div>
+			<div class="col-md-5">
+				<%= select_tag :sex, options_for_select(["Male", "Female", "Other"]), class: "form-control", placeholder: "Sex", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Father_Or_Husband_Name %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :foh_name, nil, class: "form-control", placeholder: "Father Or Husband Name", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Street %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :street, nil, class: "form-control", placeholder: "street", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Town_Or_Village_Or_City %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :town, nil, class: "form-control", placeholder: "Town Or Village Or City", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Taluk %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :taluk, nil, class: "form-control", placeholder: "Taluk", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :District %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :district, nil, class: "form-control", placeholder: "District", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :State %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :state, nil, class: "form-control", placeholder: "State", required: true %>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :pincode %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :pincode, nil, class: "form-control", placeholder: "pincode", required: true %>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :mobile_no %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :mobile_no, nil, class: "form-control", placeholder: "Mobile_no", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Diagnosis %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :diagnosis, nil, class: "form-control", placeholder: "Diagnosis", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Disability_Nature %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :disability_nature, nil, class: "form-control", placeholder: "Disability Nature", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Disability_Percentage %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :disability_percentage, nil, class: "form-control", placeholder: "Disability Percentage", required: true %>
+			</div>
+		</div><br>
+
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Advice_Or_Prescription %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :advise, nil, class: "form-control", placeholder: "advice_or_prescription", required: true %>
+			</div>
+		</div><br>
+
+		
+        <div class="row">
+			<div class="col-md-2"><%= label_tag :Monthly_Income %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :monthly_income, nil, class: "form-control", placeholder: "Monthly Income", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Reffered_To %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :reffered_to, nil, class: "form-control", placeholder: "Reffered To", required: true %>
+			</div>
+		</div><br>
+
+		
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Caste %></div>
+			<div class="col-md-5">
+			<%= select_tag :caste, options_for_select(["GENERAL", "SC", "ST"]), class: "form-control", placeholder: "Caste", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Occupation %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :occupation, nil, class: "form-control", placeholder: "Occupation", required: true %>
+			</div>
+		</div><br>
+
+		
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :Identification_Mark %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :identification_mark, nil, class: "form-control", placeholder: "Identification Mark", required: true %>
+			</div>
+		</div><br>
+
+		<!-- <div class="row">
+			<div class="col-md-2"><%= label_tag :For_Excel_No_Of_Items %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :no_of_items_for_excel, nil, class: "form-control", placeholder: "For Excel No Of Items", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :For_Excel_Date_Of_Issue %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :date_of_issue_for_excel, nil, class: "datepicker form-control", placeholder: "For_Excel_Date_Of_Issue", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :For_Excel_Anual_Cost %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :anual_cost_for_excel, nil, class: "form-control", placeholder: "For Excel Anual Cost", required: true %>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-2"><%= label_tag :For_Excel_Total_Assistance_Cost %></div>
+			<div class="col-md-5">
+				<%= text_field_tag :assistance_cost_for_excel, nil, class: "form-control", placeholder: "For Excel Total Assistance Cost", required: true %>
+			</div>
+		</div><br>
+
+ -->
+		<div class="row">
+			<div class="col-md-3">
+				<%= submit_tag "Submit", class: 'btn btn-primary' %>
+			</div>			
+		</div>
+
+	</div>
+<%end%><br>
+<!-- 
+<script type="text/javascript">
+	$('.datepicker').datepicker({
+	    format: 'dd/mm/yyyy',
+	    autoclose: true,
+    	todayHighlight: true
+	})
+</script> -->

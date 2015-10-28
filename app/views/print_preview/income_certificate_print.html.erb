@@ -1,0 +1,16 @@
+<h1>INCOME CERTIFICATE </h1>
+This is to certify that Mr./Mrs./Miss  <%= @person.name %>
+S/o,D/o,W/o  <%= @person.father_or_husband_name %>
+R/o <%= @person.street %></br>
+             <%= @person.town_or_village_or_city %></br>
+             <%= @person.district %></br>
+             <%= @person.state %></br>
+His monthly income from all the sources is Rs. <%= @person.monthly_income %> . This certificate is being issued for the purpose of availing aids and appliances free of cost under ADIP Scheme.
+
+
+Date:             <h4 align="right"> Sign. Of Issuing Authority with Seal </h4>
+
+
+<%= link_to "Back", prints_community_certificate_print_path , :class=> 'btn btn-primary' %>
+
+<%= link_to 'print', "#", :onclick => 'window.print();return false;' %>

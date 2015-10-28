@@ -14,11 +14,16 @@ end
 # 		binding.pry
 #end
 def self.authenticate(username, password)
-	salt=User.find_by_username(username).salt
-    encrypted_password= BCrypt::Engine.hash_secret(password, salt)
-		user = User.where(username: username, encrypted_password: encrypted_password)
+	user = User.find_by_username(username)
 		if(user.present?)
-			return user.first
+		  salt = User.find_by_username(username).salt
+          encrypted_password= BCrypt::Engine.hash_secret(password, salt)
+	      user = User.where(username: username, encrypted_password: encrypted_password)
+			if (user.present?)
+				return user.first
+			else
+				return nil
+			end
 		else
 			return nil
 		end

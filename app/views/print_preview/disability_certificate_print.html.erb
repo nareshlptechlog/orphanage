@@ -1,0 +1,26 @@
+<h1>DISABILITY CERTIFICATE</h1>
+1.Name : <%= @person.name %></br>
+2.Father/Mother/Husband/Guardian Name : <%= @person.father_or_husband_name %></br>
+3.Address : <%= @person.street %></br>
+             <%= @person.town_or_village_or_city %></br>
+             <%= @person.district %></br>
+             <%= @person.state %></br>
+4.Date of Birth : <%= @person.date_of_birth %>
+5.Age  :  <%= @person.age %>
+6.Caste(Mention sub caste clearly): <%= @person.caste %>
+7.Occupation : <%= @person.occupation %>
+8.Types of Disability 
+  !. Nature of Disability(Give complete Description Disability)  :<%= @person.disability_nature %>
+  !!. percentage of Disability : <%= @person.disability_percentage %>
+9.Identification Mark : <%= @person.identification_mark %>
+
+benficiary photo        <h4 align="right">Signature of Thumb Impression of Disabled Person </h4>
+
+This Identify Certificate issued only valid for Distribution of Aids and Appliances under ADIP Scheme.
+
+<h5 align="right"> Signature of District Disabled Welfare Officer with Seal </h5>
+
+
+
+<%= link_to "Back", prints_community_certificate_print_path %>
+<%= link_to 'print', "#", :onclick => 'window.print();return false;' %>

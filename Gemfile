@@ -26,10 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt-ruby', :require => 'bcrypt'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+#gem 'cupsffi'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'pry'
+
+gem "table_print"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'mysql2', '~> 0.3.18'

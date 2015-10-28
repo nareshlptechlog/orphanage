@@ -14,9 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-aaaaaaaaaaaaa
 
 
 $("#name").on("keypress",function({
-    $.print("keypressed");
+    window.alert("hiiiii");
 }));

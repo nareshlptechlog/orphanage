@@ -1,0 +1,14 @@
+<h1> SELF DECLARATION OF COMMUNITY CERTIFICATE</h1>
+I <%= @person.name %> </br>
+S/O,D/O,W/ <%= @person.father_or_husband_name %></br>
+R/O <%= @person.street %>,<%= @person.town_or_village_or_city %>,<%= @person.district %>,<%= @person.state %> hereby declare that,I belongs to <%= @person.caste %> . I also declare that the service provided to me is free of cost by the Government of India under ADIP Scheme.</br></br></br>
+
+Name:<%= @person.name %> Signature </br>
+Date:
+
+
+
+<%= link_to "Back", prints_community_certificate_print_path , :class=> 'btn btn-primary' %>
+<%= link_to 'print', "#", :onclick => 'window.print();return false;' %>
+
+
