@@ -14,13 +14,13 @@ class UsersController < ApplicationController
   end
    end
   def edit
+     @user= User.find(current_user.id)
   end
 
   def update
-  	binding.pry
-  @user = User.find(params[:id])
-  if @user.update(user_params)
-    redirect_to(@user)
+    @user = User.find(params[:id])
+  if @user.update(password: params[:password])
+    redirect_to login_path
   else
     render "edit"
   end

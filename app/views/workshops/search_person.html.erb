@@ -1,6 +1,6 @@
 <h1>WORK SHOP DIVISION </h1>
 
-<%= form_tag new_workshop_path, :method => 'get', remote: true do %>
+<%= form_tag new_workshop_path, :method => 'get' do %>
 Name : <%= text_field_tag :name %></br>
 
 S/o,D/o,W/ <%= text_field_tag :father_or_husband_name %></br>
@@ -8,6 +8,8 @@ S/o,D/o,W/ <%= text_field_tag :father_or_husband_name %></br>
 <%= submit_tag "Search", :name => nil %>
 
 <% end %>
+
+<%= link_to "Generate xl sheet",workshops_generate_xl_sheet_path %>
 
 <%= link_to "Back", root_path %>
 

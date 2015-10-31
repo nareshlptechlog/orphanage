@@ -1,0 +1,6 @@
+<h2>GENERATE XL SHEET</h2>
+<%= form_tag workshops_create_xl_path do %>
+From_date_of_issue: <%= date_field_tag :from_date %></br>
+to_date_of_issue:  <%= date_field_tag :to_date %>
+<%= submit_tag "Submit" %>
+<% end %>

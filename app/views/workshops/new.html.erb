@@ -1,0 +1,19 @@
+<h1> workshop Division </h1>
+
+
+Name: <%= text_field_tag :name, params[:name],:value=> @person.name, :disabled=> "disabled" %>
+Age: <%= text_field_tag :age, params[:age],:value=> @person.age, :disabled=> "disabled" %>
+Sex: <%= text_field_tag :sex, params[:sex],:value=> @person.sex, :disabled=> "disabled" %>
+<% address = @person.hno+","+@person.street+","+@person.town_or_village_or_city+","+@person.taluk+","+@person.district+","+@person.state+","+@person.pincode.to_s+","+@person.mobile_no.to_s %> 
+Address: <%= text_field_tag :address, params[:address],:value=> address, :disabled=> "disabled" %>
+income: <%= text_field_tag :monthly_income, params[:monthly_income],:value=> ""Rs. "+@person.monthly_income.to_s+"/- p.m"", :disabled=> "disabled" %>
+
+</br>
+<%= form_tag '/workshops' do %> 
+Date of Issue: <%= date_field_tag :date_of_issue %>
+No.of Item: <%= text_field_tag :no_of_item %>
+Actual cost <%= text_field_tag :actual_cost %>
+Total Assistance Amount :<%= text_field_tag :total_assistance_amount %></br>
+<%= hidden_field_tag :id, @person.id %>
+<%= submit_tag "Submit", class: 'btn btn-primary' %>
+<% end %>

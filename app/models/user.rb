@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	before_save :encrypt_password
+	before_update :encrypt_password
 	 validates :password, confirmation: true
 	#after_save :clear_password
 	
@@ -7,7 +8,7 @@ class User < ActiveRecord::Base
   		if password.present?
     self.salt = BCrypt::Engine.generate_salt
     self.encrypted_password= BCrypt::Engine.hash_secret(password, salt)
-    self.password = nil
+    #self.password = nil
    end
 end
 # def clear_password

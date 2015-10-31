@@ -1,4 +1,4 @@
 class Workshop < ActiveRecord::Base
-	belongs_to :person
+	belongs_to :registration_form
 
 end
